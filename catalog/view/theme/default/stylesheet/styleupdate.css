@@ -1,0 +1,216 @@
+/*index page*/
+@charset "utf-8";
+@font-face {
+    font-family: Montserrat;
+
+    src: url('../font/Montserrat-Light.otf');
+}
+@font-face {
+    font-family: "Montserrat Semi Bold";
+    src: url('../font/Montserrat-Semi-Bold.otf');
+}
+@font-face {
+    font-family: "Montserrat Black";
+    src: url('../font/Montserrat-Black.otf');
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url('../font/Montserrat-Bold.otf');
+}
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url('../font/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: "MONTSERRAT HAIRLINE";
+    src: url('../font/MONTSERRAT-HAIRLINE.OTF');
+}
+body{
+    margin-top: 60px;
+}
+/* Public */
+body { font-family: Montserrat, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+/*header{
+    background: #f8f8f8;
+}*/
+
+.margin-bottom-2{
+    margin-bottom: 2em;
+}
+header{
+    background: rgba(250,250,250,1);
+
+}
+.padding-top-50 h3{
+    font-size: 1.6em;
+    box-sizing: border-box;
+    font-family: 'Montserrat Semi Bold';
+    color: #1c1e21;
+}
+.padding-top-50 p{
+    font-size: 1.15em;
+   line-height: 1.6em;
+}
+/*.padding-crow{
+    padding-top: .8em;
+}*/
+.padding-crow .top-logo{
+    background: #253646;
+    padding: 1.2em;
+}
+
+@media only screen and (min-width:992px){
+    #top{
+        display: none;
+    }
+    #menu{
+        display:none;
+    }
+    .padding-top-50{
+        padding-top: 40%;
+    }
+}
+#list-inline-e {
+    padding-top: 1.3em;
+
+}
+.cart-wrapper{
+    padding-top: .7em;
+}
+
+#list-inline-e li{
+    padding-left: 2em;
+}
+#list-inline-e li a{
+    font-family: 'Montserrat Semi Bold';
+    font-size: 15px;
+    font-weight:500;
+    color:rgba(29,29,29,1);
+}
+.country-top{
+    width: 2rem;
+}
+.country-top-a{
+    width: 1.4rem;
+}
+.country-top-b{
+    width: 1.9rem;
+}
+.country-top-c{
+    width: 1.7rem;
+    margin-right: .9em;
+}
+header #cart>button{
+    border:inherit;
+}
+
+.swiper-viewport .swiper-pager .swiper-button-prev:hover, .swiper-viewport .swiper-pager .swiper-button-next:hover {
+    color: #fff;
+    border-color: rgba(194,200,204,1);
+    background: rgba(194,200,204,1);
+    opacity: 1 !important;
+}
+.swiper-viewport .swiper-pagination .swiper-pagination-bullet-active {
+    background: #f6f6f6;
+}
+/* background-color: #ffda00; */
+header #cart>button:after{
+    background-color: #fff;
+}
+header #cart {
+    float: inherit;
+}
+header {
+    padding: 0px 0;
+}
+
+.btn-block-language{
+    width: inherit;
+}
+#content{
+    padding-left:inherit;
+    padding-right: inherit;
+}
+.module-carousel{
+    display: none;
+}
+footer {
+    padding: 60px 0 0;
+    margin-top: .5em;
+}
+footer h4{
+    color: #fff;
+}
+footer ul.list-unstyled li a {
+    color: #999;
+}
+footer .footer-bottom {
+    border-top: 1px solid #ddd;
+    background: #253646;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #CFCFCF;
+    margin-bottom: 0;
+}
+footer .bottom-right-col{
+    color: #999;
+}
+.share-list li a{
+    color: #fff;
+}
+ .share-list li a:hover{
+     color: #666;
+ }
+.breadcrumb>li:last-child a {
+    color: #999;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #253746;
+    border-color: #253746;
+}
+.nav-tabs li.active a {
+    border: none;
+    color: #fff;
+    background: #253746 !important;
+}
+.nav-tabs li a:hover{
+    color: white;
+    background: #253746 !important;
+}
+body.account-login .login-bg-wrapper .title-link>a:after, body.account-register .login-bg-wrapper .title-link>a:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -6px;
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #253746;
+}
+body.account-login .login-bg-wrapper, body.account-register .login-bg-wrapper
+{
+    margin: 0px 0 -20px;
+}
+#product-product .tab-content {
+    border: inherit;
+}
+.row.filter-wrapper .btn-group .active {
+    border-color: #e6e6e6;
+    color: #999;
+}
+#product-product #product-thumbnail-gallery a.thumbnail.active {
+    border-color: #999;
+}
+footer ul.list-unstyled li a:hover {
+    color: rgb(204,174,0);
+}

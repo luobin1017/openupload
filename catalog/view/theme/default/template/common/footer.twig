@@ -1,0 +1,185 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      {% if informations %}
+      <div class="col-sm-2 col-xs-6">
+        <h4>{{ text_information }}</h4>
+        <ul class="list-unstyled">
+         {% for information in informations %}
+          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="col-sm-2 col-xs-6">
+        <h4>{{ text_service }}</h4>
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          <li><a href="{{ return }}">{{ text_return }}</a></li>
+          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+        </ul>
+      </div>
+      <div class="visible-xs col-xs-12"></div>
+      <div class="col-sm-2 col-xs-6">
+        <h4>{{ text_account }}</h4>
+        <ul class="list-unstyled">
+          <li><a href="{{ account }}">{{ text_account }}</a></li>
+          <li><a href="{{ order }}">{{ text_order }}</a></li>
+          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+        </ul>
+      </div>
+      <div class="hidden-xs col-md-2 col-sm-2"></div>
+      <div class="col-sm-4 col-xs-12 bottom-right-col">
+        <h4>Join us</h4>
+        <p>Be the first to hear about exclusive offers from Dser.</p>
+        <style>
+          .input-normal input {
+            width: 90%;
+            border-radius: 1.5rem;
+            line-height: normal;
+            height: 36px;
+            border: 1px solid #CFCFCF;
+            background: transparent;
+            color: #CFCFCF;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left: 1.1em;
+          }
+           ._1DcNzQdriv button {
+            background: #CFCFCF;
+            color: #242424;
+            text-align: center;
+            width: 90%;
+            border: 0;
+            line-height: 2em;
+            font-size: 1.2em;
+            border-radius: 1.4em;
+            padding: 0 0.5rem;
+             margin-top: 1em;
+            cursor: pointer;
+          }
+        </style>
+        <div class="input-normal">
+          <input autocomplete="off" maxlength="200" name="email" value="" placeholder="Enter Your Email">
+        </div>
+        <div class="_1DcNzQdriv"><button type="submit">SUBSCRIBE</button></div>
+        <ul class="list-inline share-list" style="margin-top: 1em">
+          <li>
+            <a target="_blank" href=" https://www.facebook.com/dserlife/?modal=admin_todo_tour">
+              <!--<img src="/image/Icon/facebook.png" class="icon-size">-->
+              <i class="fa fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x share_facebook" style="line-height: 45px;font-size: 25px;color: #000"></i>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/dserlife">
+              <!--<img src="/image/Icon/twitter.png" class="icon-size">-->
+              <i class="fa fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x share_twitter" style="font-size: 27px;color: #000"></i>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/channel/UC9801D4jzjY-Mg7kgnGBJTQ">
+              <!-- <img src="/image/Icon/reddit.png" class="icon-size"> -->
+              <i class="fa fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-youtube-play fa-stack-1x fa-youtube-play" style="color: #000"></i>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/dser_official/">
+              <!--  <img src="/image/Icon/pinterest2.png" class="icon-size">-->
+              <i class="fa fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-instagram" style="color: #000"></i>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/company/26577979/admin/">
+              <!--  <img src="/image/Icon/pinterest2.png" class="icon-size">-->
+              <i class="fa fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin-square fa-stack-1x fa-linkedin-square" style="color: #000;font-size: 1.1em;"></i>
+              </i>
+            </a>
+          </li>
+
+          <!-- <li>
+              <a target="_blank" href='https://plusone.google.com/_/+1/confirm?hl=en&url='>
+                  <!-- <img src="/image/Icon/google-plus.png" width="25" height="20">
+                  <i class="fa fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-google-plus fa-stack-1x fa-inverse" style="color: #000"></i>
+                  </i>
+              </a>
+          </li> -->
+        </ul>
+        {#<ul class="list-unstyled">
+          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+          <li><a href="{{ special }}">{{ text_special }}</a></li>
+        </ul>#}
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom">Copyright © 2019 Dser Innovations Limited</p>
+  <div class="fixed-shortcut-wrapper">
+{#    <div class="shortcut hidden-sm hidden-xs">
+      <a href="{{ helper.url.link("checkout/cart") }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+      <a href="{{ account }}"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+      <a href="{{ wishlist }}"><i class="fa fa-heart" aria-hidden="true"></i></a>
+      <a href="#" class="scroll-top go-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>#}
+  </div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+
+<script type="text/javascript">
+  var showAlert = function(type, content) {
+    if (type == 'cart') {
+      redirectButtonText = '{{ button_checkout }}';
+      redirectButtonLocation = '{{ helper.url.link("checkout/cart") }}';
+    } else if (type == 'wishlist') {
+      redirectButtonText = '{{ button_wishlist }}';
+      redirectButtonLocation = '{{ wishlist }}';
+    } else if (type == 'compare') {
+      redirectButtonText = '{{ button_compare }}';
+      redirectButtonLocation = '{{ helper.url.link("product/compare") }}';
+    }
+
+    layer.open({
+      title: '{{ text_layer_popup_title }}',
+      skin: 'layer-alert',
+      shadeClose: true,
+      content: content,
+      btn: [redirectButtonText, '{{ button_continue_shopping }}'],
+      yes: function() {
+        location = redirectButtonLocation;
+      }
+    });
+  }
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.goup({
+      trigger: 100,
+      bottomOffset: 100,
+      locationOffset: 10,
+      title: '',
+      titleAsText: true
+    });
+  });
+</script>
+<script src="/catalog/view/javascript/jquery.goup.min.js"></script>
+{{ helper.debug_bar.render }}
+</body></html>

@@ -1,0 +1,66 @@
+{{ header }}
+<div id="common-home" class="container-fluid">
+  <div class="row">
+      {{ column_left }}
+      {% if column_left and column_right %}
+      {% set class = 'col-sm-6' %}
+      {% elseif column_left or column_right %}
+      {% set class = 'col-sm-9' %}
+      {% else %}
+      {% set class = 'col-sm-12' %}
+      {% endif %}
+      <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
+      {{ column_right }}
+      <div class="container-fluid">
+          <div class="row margin-bottom-2">
+              <div class="col-sm-5 col-sm-offset-1 col-xs-12">
+                  <div>
+                      <img src="/image/index/index_1.png" width="100%" alt="" class="img-responsive">
+                  </div>
+              </div>
+              <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+                    <div class="padding-top-50">
+                        <h3>Stay Innovative and Stay Exceeding</h3>
+                        <p>
+                            Dser vacuum cleaner outperforms the others. Powerful suction thoroughly clean the all types of surfaces such as carpets, tile floors, hardwood, wall and stairs. Featuring superb auto turbo pressure boost function, the robot vacuum cleaner knows clearly about the moment to switch to strong cleaning mode. 1.5s response time makes the vacuum cleaner be more efficient at working.
+                        </p>
+                    </div>
+              </div>
+              <div class="col-sm-2 hidden-xs"></div>
+          </div>
+
+          <div class="row">
+              <div class="col-sm-2 hidden-xs"></div>
+              <div class="col-sm-3 hidden-xs">
+                  <div class="padding-top-50">
+                      <h3>Stay Innovative and Stay Exceeding</h3>
+                      <p>
+                          Dser vacuum cleaner outperforms the others. Powerful suction thoroughly clean the all types of surfaces such as carpets, tile floors, hardwood, wall and stairs. Featuring superb auto turbo pressure boost function, the robot vacuum cleaner knows clearly about the moment to switch to strong cleaning mode. 1.5s response time makes the vacuum cleaner be more efficient at working.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-sm-5 col-sm-offset-1 col-xs-12">
+                  <div>
+                      <img src="/image/index/index_2.png" width="100%" alt="" class="img-responsive">
+                  </div>
+              </div>
+              <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                  <div class="padding-top-50">
+                      <h3>Stay Innovative and Stay Exceeding</h3>
+                      <p>
+                          Dser vacuum cleaner outperforms the others. Powerful suction thoroughly clean the all types of surfaces such as carpets, tile floors, hardwood, wall and stairs. Featuring superb auto turbo pressure boost function, the robot vacuum cleaner knows clearly about the moment to switch to strong cleaning mode. 1.5s response time makes the vacuum cleaner be more efficient at working.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-sm-1 hidden-xs"></div>
+          </div>
+      </div>
+      <div style="margin-top: 4em;margin-bottom: .5em">
+          <img src="/image/index/index_3.jpg" width="100%" alt="" class="img-responsive">
+      </div>
+      <div class="">
+          <video autoplay="" loop="" muted="" src="/catalog/view/theme/default/video/134815_1375.mp4" class="img-responsive"></video>
+      </div>
+  </div>
+</div>
+{{ footer }}
